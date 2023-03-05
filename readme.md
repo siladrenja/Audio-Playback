@@ -55,9 +55,9 @@ int main(){
 //creating the AudioPlayer object
     AP::AudioPlayer ap(wfx, 4096, [](char* buffer, size_t size){
 
-    if(!(--EndAfter)) return 0; //if we played enough buffers, we return 0
+    		if(!(--EndAfter)) return 0; //if we played enough buffers, we return 0
 
-    //filling the buffer with sinusoidal wave
+    		//filling the buffer with sinusoidal wave
 		for(size_t i = 0; i < size; i++){
 			buffer[i] = std::sin(i);
 		}
