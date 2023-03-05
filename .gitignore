@@ -1,0 +1,5 @@
+*.cpp
+*.mp3
+/AudioPlayerTest/minimp3.h
+*.txt
+/AudioPlayerTest/queuePointer.h
