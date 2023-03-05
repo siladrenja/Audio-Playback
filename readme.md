@@ -53,7 +53,7 @@ int main(){
     int EndAfter = 16; //after how many buffers played it should end
 
 //creating the AudioPlayer object
-    AP::AudioPlayer ap(wfx, 4096, [](char* buffer, size_t size){
+    AP::AudioPlayer ap(wfx, 4096, [&](char* buffer, size_t size){
 
     		if(!(--EndAfter)) return 0; //if we played enough buffers, we return 0
 
